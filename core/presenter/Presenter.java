@@ -47,7 +47,7 @@ public class Presenter<T extends Toy> {
         this.view.set("Введите пароль админа: ");
         String pass = this.view.get();
 
-        if(this.manager.savePass(pass)) {
+        if(this.manager.savePass(pass)) { // сохраняет хэш а не сам пароль
 
             this.view.set("Режим админа включен");
             this.admin = true;
@@ -355,7 +355,7 @@ public class Presenter<T extends Toy> {
         for (T item : this.winnerListItem) {
 
             this.view.set(item.toString());
-            
+
         }
 
     }

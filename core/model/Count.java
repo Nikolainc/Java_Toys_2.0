@@ -29,7 +29,7 @@ public class Count {
     @Override
     public String toString() {
 
-        return String.format("Count: %s, ID: %s", this.idCount, this.id);
+        return String.format("Count: %s", this.idCount);
 
     }
 
